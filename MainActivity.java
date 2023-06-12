@@ -16,7 +16,7 @@ import java.net.URL;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String API_KEY = "YOUR_API_KEY";
+    private static final String API_KEY = "bd5e378503939ddaee76f12ad7a97608";
     private static final String API_URL = "http://api.openweathermap.org/data/2.5/weather?q=%s&appid=%s";
 
     private TextView tvLocation;
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 FetchWeatherTask task = new FetchWeatherTask();
-                task.execute("YOUR_CITY_NAME");
+                task.execute("Bartin");
             }
         });
     }
